@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&Charge | Il tuo compagno di mobilità elettrica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00d285;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+        header { text-align: center; padding: 60px 20px; }
+        header h1 { font-size: 3rem; font-weight: 800; margin-bottom: 10px; }
+        header h1 span { color: var(--primary); }
+        header p { font-size: 1.2rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+
+        /* Sezione Codice Amico - In alto per massima conversione */
+        .promo-card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 2px solid var(--primary);
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 60px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        .code-box {
+            background: #fff;
+            color: #0f172a;
+            font-family: 'Monaco', monospace;
+            font-size: 2.2rem;
+            padding: 15px;
+            border-radius: 12px;
+            margin: 20px 0;
+            display: inline-block;
+            min-width: 250px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-weight: 800;
+        }
+
+        .code-box:hover { transform: scale(1.05); background: var(--primary); }
+
+        /* Griglia dei Valori */
+        .features-grid { display: grid; gap: 30px; margin-bottom: 60px; }
+        
+        .feature-item {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .feature-item h3 { margin-top: 0; color: var(--primary); font-size: 1.4rem; }
+        .feature-item p { margin-bottom: 0; font-size: 0.95rem; opacity: 0.9; }
+
+        .mission-box {
+            background: rgba(0, 210, 133, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px dashed var(--primary);
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: var(--primary);
+            color: #0f172a;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.8rem; }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            .code-box { font-size: 1.6rem; width: 80%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Miglioriamo la <span>ricarica.</span></h1>
+            <p>&Charge è il tuo compagno di mobilità elettrica: rendiamo la ricarica più economica, affidabile e piacevole.</p>
+        </header>
+
+        <section class="promo-card">
+            <h2 style="margin-top:0">Unisciti alla Community</h2>
+            <p>Usa il mio codice invito per ottenere subito un bonus di benvenuto e premi esclusivi!</p>
+            <div class="code-box" id="refCode" onclick="copyCode()">JXTJBH</div>
+            <p style="font-size: 0.8rem; opacity: 0.7;">Clicca sopra per copiare il codice</p>
+            <a href="https://and-charge.com/" class="btn-download" target="_blank">SCARICA L'APP</a>
+	    <p>Ehi, conosci già &Charge? Unisciti alla Community più attiva di proprietari di e-car, raccogli km per la tua e-car e migliora l'esperienza di ricarica per tutti. Con questo codice, tu e il tuo amico riceverete 10 km non appena risolverete una sfida di immagini o di operatori o effettuerete un acquisto presso uno dei nostri partner online.</p>
+            <a href="https://and-charge.com/invite-friends?code=JXTJBH" class="btn-download" target="_blank">Unisciti alla Community</a>
+	</section>
+
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>⭐ Valuta la tua ricarica</h3>
+                <p>Condividi la tua esperienza presso le stazioni. Le tue recensioni forniscono indicazioni preziose sulla qualità e l'affidabilità, aiutando l'intera comunità a trovare i migliori punti di ricarica.</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>📢 Dai un feedback diretto</h3>
+                <p>Durante una <strong>&Charge Challenge</strong>, il tuo feedback viene trasmesso in tempo reale al gestore. Contribuisci direttamente all'ottimizzazione dell'infrastruttura e ricevi una ricompensa in cambio.</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>📍 Dati migliori sul sito</h3>
+                <p>Aggiungi immagini e dettagli sul contesto delle stazioni. Queste ottimizzazioni aiutano tutti i conducenti a migliorare la reperibilità dei punti di ricarica ovunque si trovino.</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>🎁 Raccolta e benefici</h3>
+                <p>Accumula punti con le attività dell'app e scambiali con premi, vantaggi esclusivi e sconti sull'energia di ricarica. Non ci si annoia, garantito!</p>
+            </div>
+        </div>
+
+        <section class="mission-box">
+            <p><em>"Uniamo anni di esperienza a soluzioni innovative. Il nostro obiettivo è lavorare con la community e i partner per il futuro della mobilità."</em></p>
+        </section>
+
+        <footer>
+            &copy; 2026 - Creato per la Community &Charge
+        </footer>
+    </div>
+
+    <script>
+        function copyCode() {
+            const code = "IL-TUO-CODICE"; // Sostituisci anche qui!
+            navigator.clipboard.writeText(code);
+            const box = document.getElementById('refCode');
+            box.innerText = "COPIATO!";
+            box.style.background = "#00d285";
+            setTimeout(() => {
+                box.innerText = code;
+                box.style.background = "#fff";
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>

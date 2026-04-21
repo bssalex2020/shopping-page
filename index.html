@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+		/* MENU NAV */
+			/* Add a black background color to the top navigation */
+			.topnav {
+			  background-color: #333;
+			  overflow: hidden;
+			}
+			
+			/* Style the links inside the navigation bar */
+			.topnav a {
+			  float: center;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+			
+			/* Change the color of links on hover */
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			
+			/* Add an active class to highlight the current page */
+			.topnav a.active {
+			  background-color: #04AA6D;
+			  color: white;
+			}
+			
+			/* Hide the link that should open and close the topnav on small screens */
+			.topnav .icon {
+			  display: none;
+			}
+		/* MENU NAV */
+       
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            opacity: 0; /* Inizialmente invisibile per l'animazione */
+            transform: translateY(50px); /* Spostamento iniziale verso il basso */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0); /* Ritorna alla posizione originale */
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            opacity: 0; /* Inizialmente invisibile per l'animazione dei prodotti */
+            transform: translateX(-20px); /* Spostamento iniziale a sinistra */
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            transition-delay: 0.2s; /* Ritardo per un effetto a cascata */
+        }
+        .product-item.visible {
+            opacity: 1;
+            transform: translateX(0); /* Ritorna alla posizione originale */
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Benvenuti nella Nostra Shopping Page</h1>
+        <p>In questa pagine potrai trovare vari prodotti da noi consigliati, Scopri i migliori prodotti in varie categorie e acquista tramite i nostri link affiliati!</p>
+    </header>
+
+<!-- MENU NAV -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+<a href="#energia-elettrica">Energia elettrica e Gas</a>
+<a href="#ecar">Auto Elettrica</a>
+<a href="#auto">Auto</a>
+<a href="#banche-e-investimenti">Banche e Investimenti</a>
+	
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- MENU NAV -->
+
+	<section id="energia-elettrica">
+        <h2>Bollette Energia elettrica e Gas</h2>
+		<div class="product">
+            <div class="product-item">
+                <img src="img/octopus-pulita-accessibile-recensioni.jpg" alt="energia-elettrica">
+                <h3>Octopus Energy</h3>
+                <p>Descrizione: Energia Economica - Risparmia con i Nostri Contratti Luce e Gas a Prezzi Contenuti!</p>
+                <a href="energia-economica.html" class="btn" target="_blank">Scopri di più</a>
+            </div>
+			<div class="product-item">
+                <img src="img/cer-img.png" width="200" height="200" alt="cer-verona">
+                <h3>Comunità Energetiche Rinnovabili (CER)</h3>
+                <p>Descrizione: Produrre, condividere e risparmiare energia pulita insieme alla tua comunità”.</p>
+                <a href="cer-verona.html" class="btn" target="_blank">Scopri di più</a>
+            </div>
+        </div>
+    </section>
+
+	<section id="ecar">
+        <h2>Auto Elettrica</h2>
+		<div class="product">
+            <div class="product-item">
+                <img src="img/ecar-electra.png" width="200" height="200" alt="Electra">
+                <h3>Electra & Octopus Electroverse</h3>
+                <p>Descrizione: Colonnine di ricarica con un'esperienza rivoluzionaria!</p>
+                <a href="ricarica-auto-elettrica.html" class="btn" target="_blank">Scopri di più</a>
+            </div>
+			<div class="product-item">
+                <img src="img/echarge-check.png" width="200" height="200" alt="&Charge">
+                <h3>&Charge</h3>
+                <p>Descrizione: &Charge è il tuo compagno di mobilità elettrica: rendiamo la ricarica più economica, affidabile e piacevole!</p>
+                <a href="echarge-check.html" class="btn" target="_blank">Scopri di più</a>
+            </div>
+        </div>
+    </section>
+
+	<section id="auto">
+        <h2>Auto: Assicurazioni, Parcheggi a pagamento</h2>
+		<div class="product">
+            <div class="product-item">
+                <img src="img/prima-assicurazione-auto-calcolo-preventivo.webp" alt="prima-assicurazioni">
+                <h3>Prima Assicurazioni</h3>
+                <p>Descrizione: Assicurazione Auto, Autocarro a uso privato, Moto, Ciclomotore e scooter a Prezzi Contenuti!</p>
+                <a href="prima-assicurazioni.html" class="btn" target="_blank">Scopri di più</a>
+            </div>
+		<div class="product">
+            <div class="product-item">
+                <img src="img/easypark-img.jpg" alt="prima-assicurazioni">
+                <h3>EasyPark</h3>
+                <p>Descrizione: I parcheggi su strisce blu sono aree di sosta a pagamento, attive solitamente nei giorni feriali, con tariffe orarie variabili secondo il comune. È obbligatorio esporre il ticket del parcometro o usare app!</p>
+                <a href="easypark.html" class="btn" target="_blank">Scopri di più</a>
+            </div>
+        </div>
+    </section>
+
+	<section id="banche-e-investimenti">
+        <h2>Banche e Investimenti / Risparmio</h2>
+		<div class="product">
+            <div class="product-item">
+                <img src="img/cash.jpg" alt="soldi">
+                <h3>SumUp Pay & Trade Republic</h3>
+                <p>Descrizione: SumUp Pay è un portafoglio in valuta elettronica gratuito che ti consente di inviare e ricevere denaro da altri utenti, pagare online e in negozio con una Mastercard virtuale e accumulare cashback con ogni acquisto.!</p>
+				<p>Descrizione: Trade Republic offre investimenti in azioni, derivati, criptovalute, piani di risparmio e investimenti frazionati.!</p>
+                <a href="cash.html" class="btn" target="_blank">Scopri di più</a>
+            </div>
+		<div class="product">
+            <div class="product-item">
+                <img src="img/novax8-1.png" alt="cashback-novax8-skai1">
+                <h3>Cashback NovaX8 Skai1</h3>
+                <p>Descrizione: Il cashback è un sistema di rimborso, solitamente tra l'1% e il 10%, che restituisce una percentuale della spesa effettuata, sia online che in negozi fisici. A differenza dello sconto, il denaro viene riaccreditato successivamente sul conto corrente. !</p>
+                <a href="novax8.html" class="btn" target="_blank">Scopri di più</a>
+            </div>
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+<!-- MENU NAV -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+<a href="#energia-elettrica">Energia elettrica e Gas</a>
+<a href="#ecar">Auto Elettrica</a>
+<a href="#auto">Auto</a>
+<a href="#banche-e-investimenti">Banche e Investimenti</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- MENU NAV -->
+	
+    <footer>
+        <p>&copy; 2025 Shopping Page. Tutti i diritti riservati. Nota: I link sono affiliati e potremmo guadagnare una commissione sugli acquisti.</p>
+    </footer>
+
+    <script>
+        // Smooth Scroll per i link del menu
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Animazione delle sezioni e dei prodotti con IntersectionObserver
+        const sections = document.querySelectorAll('section');
+        const productItems = document.querySelectorAll('.product-item');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1 // Attiva quando il 10% della sezione è visibile
+        };
+
+        const sectionObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Smette di osservare una volta visibile
+                }
+            });
+        }, observerOptions);
+
+        const productObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Smette di osservare una volta visibile
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => sectionObserver.observe(section));
+        productItems.forEach(item => productObserver.observe(item));
+    </script>
+
+</body>
+</html>
