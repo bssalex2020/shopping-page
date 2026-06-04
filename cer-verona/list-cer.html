@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunità Energetiche Rinnovabili - Registrazione e Cabine</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32; /* Verde sostenibile */
+            --secondary-color: #1565c0; /* Blu istituzionale/energia */
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, var(--primary-color), #1b5e20);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-banner h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+
+        .cta-container {
+            background-color: #e8f5e9;
+            border-left: 5px solid var(--primary-color);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1100px;
+            border-radius: 4px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1b5e20;
+        }
+
+        .main-content {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px 40px 20px;
+        }
+
+        .provincia-section {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 35px;
+        }
+
+        .provincia-title {
+            color: var(--secondary-color);
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+            vertical-align: middle; /* Allineamento verticale centrato per gestire meglio il logo */
+        }
+
+        th {
+            background-color: #f1f3f5;
+            color: #495057;
+            font-weight: 600;
+        }
+
+        .cer-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cer-logo {
+            height: 35px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .cer-name {
+            font-weight: bold;
+            color: #ef7d14; /* Tonalità ripresa dal brand inCER */
+        }
+
+        .cabina-code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #d63384;
+            display: inline-block;
+        }
+
+        .status-badge {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .comuni-list {
+            color: #495057;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-banner h1 { font-size: 1.8rem; }
+            th, td { padding: 10px; font-size: 0.9rem; }
+            .cer-container { flex-direction: column; align-items: flex-start; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>Comunità Energetiche Rinnovabili (CER)</h1>
+        <p>Partecipa alla transizione energetica del tuo territorio</p>
+    </div>
+
+    <div class="main-content">
+        
+        <!-- SEZIONE CALL TO ACTION -->
+        <div class="cta-container">
+            <h2>Iscriviti ora! Non aspettare...</h2>
+            <p>Non appena avremo un numero sufficiente di iscritti, attiveremo una configurazione anche nella tua zona. Portiamo l'energia condivisa e sostenibile vicino a te.</p>
+        </div>
+
+        <p style="font-size: 1.1rem; margin: 30px 0 15px 0;">Di seguito trovi l'elenco delle configurazioni e delle cabine primarie attualmente <strong>in apertura</strong>:</p>
+
+        <!-- PROVINCIA DI VICENZA -->
+        <div class="provincia-section">
+            <h2 class="provincia-title">Provincia di Vicenza</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">CER</th>
+                            <th style="width: 25%;">Codice e Nome Cabina</th>
+                            <th style="width: 43%;">Comuni e Aree Coperte</th>
+                            <th style="width: 12%;">Stato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC001E01561</span><br>
+                                <strong>SCHIO</strong>
+                            </td>
+                            <td class="comuni-list">Malo, Marano Vicentino, Monte di Malo, San Vito di Leguzzano, Santorso, Schio, Torrebelvicino, Valli del Pasubio.</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PROVINCIA DI VERONA -->
+        <div class="provincia-section">
+            <h2 class="provincia-title">Provincia di Verona</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">CER</th>
+                            <th style="width: 25%;">Codice e Nome Cabina</th>
+                            <th style="width: 43%;">Comuni e Aree Coperte</th>
+                            <th style="width: 12%;">Stato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC001E01512</span><br>
+                                <strong>BUSSOLENGO</strong>
+                            </td>
+                            <td class="comuni-list">Bussolengo, Fumane, Marano di Valpolicella, Negrar di Valpolicella, Pescantina, San Pietro in Cariano, Sant’Ambrogio di Valpolicella, Verona.</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC001E01247</span><br>
+                                <strong>CASTEL D’AZZANO</strong>
+                            </td>
+                            <td class="comuni-list">Buttapietra, Castel D’Azzano, Isola della Scala, Oppeano, San Giovanni Lupatoto, Verona, Vigasio, Villafranca di Verona.</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC024E00007</span><br>
+                                <strong>GREZZANA</strong>
+                            </td>
+                            <td class="comuni-list">Bosco Chiesanuova, Cerro Veronese, Erbezzo, Grezzana, Mezzane di Sotto, Negrar di Valpolicella, Roverè Veronese, San Mauro di Saline, Sant’Anna d’Alfaedo, Tregnago, Verona.</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC001E00897</span><br>
+                                <strong>SAN GIOVANNI LUPATOTO</strong>
+                            </td>
+                            <td class="comuni-list">Buttapietra, San Giovanni Lupatoto, San Martino Buon Albergo, Verona, Zevio.</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC001E00894</span><br>
+                                <strong>SOAVE</strong>
+                            </td>
+                            <td class="comuni-list">Belfiore, Caldiero, Cazzano di Tramigna, Colognola ai Colli, Illasi, Montecchia di Crosara, Monteforte d’Alpone, Ronco all’Adige, San Bonifacio, Soave, Zevio.</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC024E00005</span><br>
+                                <strong>VERONA TORRICELLE</strong>
+                            </td>
+                            <td class="comuni-list">Verona (Poiano, Sommavalle, Ca' Gerosa, Campagnola, San Felice, San Michele Extra, Borgo Santa Croce, Borgo Trieste, Bosgo Venezia) .</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC024E00004</span><br>
+                                <strong>VERONA CENTRO OVEST</strong>
+                            </td>
+                            <td class="comuni-list">Bussolengo, Grezzana, Negrar di Valpolicella, Pescantina, San Pietro in Cariano, Verona.</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cer-container">
+                                    <img src="logo-incer.png" alt="Logo inCER" class="cer-logo">
+                                    <span class="cer-name">inCER</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="cabina-code">AC001E01245</span><br>
+                                <strong>VILLAFRANCA</strong>
+                            </td>
+                            <td class="comuni-list">Castel d’Azzano, Mozzecane, Nogarole Rocca, Povegliano Veronese, Roverbella, Sommacampagna, Valeggio sul Mincio, Verona, Vigasio, Villafranca.</td>
+                            <td><span class="status-badge">In Apertura</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
