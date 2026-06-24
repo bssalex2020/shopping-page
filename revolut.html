@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entra nel Futuro del Denaro con Revolut</title>
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: #171c26;
+            --text-color: #ffffff;
+            --text-muted: #94a3b8;
+            --accent-color: #1d4ed8;
+            --accent-hover: #2563eb;
+            --cta-bg: #ffffff;
+            --cta-text: #0b0e14;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header / Hero Section */
+        header {
+            text-align: center;
+            padding: 60px 0 40px 0;
+        }
+
+        .logo-placeholder {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* Buttons */
+        .btn-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--cta-bg);
+            color: var(--cta-text);
+            text-decoration: none;
+            padding: 16px 32px;
+            font-weight: 700;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Features Section */
+        .features {
+            margin: 60px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #232b3a;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Steps Section */
+        .steps-box {
+            background: linear-gradient(135deg, #171c26 0%, #0f131a 100%);
+            padding: 40px;
+            border-radius: 24px;
+            margin: 60px 0;
+            border: 1px solid #232b3a;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 24px;
+        }
+
+        .step-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-item::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 2px;
+            background-color: var(--accent-color);
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .step-item strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .step-item p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Footer / Disclaimer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #171c26;
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 32px; }
+            .container { padding: 20px 15px; }
+            .steps-box { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <div class="logo-placeholder">Revolut</div>
+            <h1>Entra nel futuro<br>del denaro.</h1>
+            <p class="subtitle">Unisciti a me e a oltre 70 milioni di utenti che gestiscono le proprie finanze in modo intelligente, rapido e sicuro.</p>
+            
+            <div class="btn-container">
+                <a href="https://revolut.com/referral/?referral-code=a_turco95!MAY2-26-AR-H1&geo-redirect" class="btn" target="_blank" rel="noopener">Iscriviti ora su Revolut</a>
+            </div>
+        </header>
+
+        <hr style="border: 0; height: 1px; background: #171c26; margin: 20px 0;">
+
+        <!-- Features -->
+        <section class="features">
+            <h2>Perché adorerai Revolut</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Conto gratuito in pochi minuti</h3>
+                    <p>Zero file in banca. Apri il tuo conto direttamente dallo smartphone in meno di 5 minuti e con zero scartoffie.</p>
+                </div>
+                <div class="card">
+                    <h3>Invia denaro all'istante</h3>
+                    <p>Dividi le spese con gli amici o invia denaro in tempo reale a costo zero a qualsiasi utente nella community.</p>
+                </div>
+                <div class="card">
+                    <h3>Il compagno di viaggio perfetto</h3>
+                    <p>Spendi e preleva all'estero in oltre 150 valute al tasso di cambio reale, senza commissioni nascoste.</p>
+                </div>
+                <div class="card">
+                    <h3>Sicurezza avanzata</h3>
+                    <p>Blocca e sblocca le tue carte con un tap. Genera carte virtuali usa e getta per acquisti online a prova di frode.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps -->
+        <section class="steps-box">
+            <h2 style="text-align: left; margin-bottom: 25px;">Come ricevere il tuo bonus</h2>
+            <ul class="step-list">
+                <li class="step-item">
+                    <strong>Clicca sul link di invito</strong>
+                    <p>Usa il pulsante in questa pagina per aprire il link di referral ufficiale.</p>
+                </li>
+                <li class="step-item">
+                    <strong>Registrati e verifica l'identità</strong>
+                    <p>Inserisci il tuo numero, scarica l'app e segui i passaggi guidati per attivare il conto.</p>
+                </li>
+                <li class="step-item">
+                    <strong>Ricarica e ordina la carta</strong>
+                    <p>Effettua una ricarica immediata e richiedi la tua carta fisica.</p>
+                </li>
+                <li class="step-item">
+                    <strong>Completa i passaggi minimi</strong>
+                    <p>Effettua i primi pagamenti richiesti dalla promozione per sbloccare i vantaggi. (Fare 3 acquisti di minimo 5€ ciascuno)</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Final Call to Action -->
+        <div class="btn-container" style="margin-top: 40px;">
+            <p style="margin-bottom: 20px; font-size: 14px; color: var(--text-muted);">La promozione scade a breve. Non perdere l'occasione!</p>
+            <a href="https://revolut.com/referral/?referral-code=a_turco95!MAY2-26-AR-H1&geo-redirect" class="btn" target="_blank" rel="noopener">Prendi il tuo bonus di benvenuto</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Questa è una pagina di invito personale (Referral). Revolut Ltd è un'azienda tecnologica finanziaria. I termini e le condizioni della promozione e la disponibilità dei bonus sono soggetti ai requisiti ufficiali di Revolut applicabili al momento della registrazione.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
